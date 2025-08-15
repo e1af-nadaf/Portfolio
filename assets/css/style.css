@@ -21,5 +21,8 @@ html {
 }
 
 body {
-  /* background-color: var(--bg-color); */
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--primary-font);
+  scroll-padding-top: 6rem;
 }
