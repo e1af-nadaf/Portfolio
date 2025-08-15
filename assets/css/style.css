@@ -1,0 +1,11 @@
+:root {
+  --bg-color: #faf9f9;
+  --accent-color: #89b0ae;
+  --text-color: #555b6e;
+  --soft-accent: #bee3db;
+  --hover: #ffd6ba;
+
+  /* Fonts */
+  --primary-font: "Poppins", sans-serif;
+  --secondary-font: "Inter", sans-serif;
+}
