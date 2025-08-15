@@ -253,6 +253,14 @@ body {
 
 /* Contact me */
 
+#contact {
+  background-color: var(--soft-accent);
+  padding: 6rem 3rem 4rem;
+  text-align: center;
+  min-height: 80vh;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
 /* Animations */
 
 @keyframes fadeIn {
