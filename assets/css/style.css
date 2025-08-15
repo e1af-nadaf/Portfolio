@@ -24,7 +24,7 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   font-family: var(--primary-font);
-  scroll-padding-top: 6rem;
+  scroll-padding-top: 20rem;
 }
 
 /* Navbar */
@@ -112,7 +112,9 @@ body {
 }
 
 #about h2,
-#projects h2 {
+#projects h2,
+#skills h2,
+#contact h2 {
   font-size: 1.8rem;
   color: var(--accent-color);
   margin-bottom: 1rem;
@@ -212,11 +214,14 @@ body {
   background-color: var(--bg-color);
   padding: 6rem 3rem 4rem;
   text-align: center;
-  min-height: 80vh;
+  min-height: 60vh;
   animation: fadeIn 1.2s ease-in-out;
 }
+#skills h2 {
+  color: var(--text-color);
+}
 
-#skills .handwritten {
+.handwritten {
   font-family: "Handlee", cursive;
 }
 
@@ -257,8 +262,61 @@ body {
   background-color: var(--soft-accent);
   padding: 6rem 3rem 4rem;
   text-align: center;
-  min-height: 80vh;
+  min-height: 70vh;
   animation: fadeIn 1.2s ease-in-out;
+}
+
+#contact h2 {
+  color: var(--text-color);
+}
+
+#contact .contact-subtext {
+  font-size: 1.1rem;
+  font-family: var(--secondary-font);
+  margin-bottom: 3rem;
+}
+
+#contact .contact-methods {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+#contact .contact-methods .contact-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--bg-color);
+  text-decoration: none;
+  color: var(--accent-color);
+  border-radius: 2rem;
+  font-weight: bold;
+  transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+#contact .contact-methods .contact-link i {
+  font-size: 1.2rem;
+}
+
+#contact .contact-methods .contact-link:hover {
+  transform: translateY(-5px);
+  background-color: var(--hover);
+  color: var(--text-color);
+}
+
+/* Footer */
+
+#footer {
+  background-color: var(--text-color);
+  color: var(--bg-color);
+  text-align: center;
+  padding: 1rem;
+}
+
+#footer .footer-text {
+  font-size: 0.7rem;
 }
 
 /* Animations */
