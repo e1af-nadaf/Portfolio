@@ -209,6 +209,10 @@ body {
 
 /* Skills */
 
+#skills .handwritten {
+  font-family: "Handlee", cursive;
+}
+
 /* Animations */
 
 @keyframes fadeIn {
