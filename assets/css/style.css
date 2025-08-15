@@ -68,7 +68,7 @@ body {
 }
 
 /* Hero section */
-
+#hero,
 #about {
   padding: 6rem 3rem 1rem;
   max-width: 70%;
@@ -78,36 +78,36 @@ body {
   animation: fadeIn 1.2s ease-in-out;
 }
 
-#about h1 {
+#hero h1 {
   font-size: 2.5rem;
   font-weight: 600;
   margin-top: 3rem;
   margin-bottom: 1rem;
 }
 
-#about .mid-quote {
+#hero .mid-quote {
   font-size: 1.25rem;
 }
 
 /* My Portrait */
 
-#about .portrait {
+#hero .portrait {
   width: 20rem;
   height: 20rem;
   overflow: hidden;
-  margin: 3rem auto;
+  margin: 3rem auto 0.01rem;
   border-radius: 50%;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-#about .portrait img {
+#hero .portrait img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.4s ease;
 }
 
-#about .portrait img:hover {
+#hero .portrait img:hover {
   transform: scale(1.2);
 }
 
@@ -115,7 +115,6 @@ body {
 #projects h2 {
   font-size: 1.8rem;
   color: var(--accent-color);
-  margin-top: 1.5rem;
   margin-bottom: 1rem;
   font-weight: 600;
 }
@@ -244,12 +243,15 @@ body {
   font-size: 2.5rem;
   width: 2.5rem;
   height: 2.5rem;
+  font-weight: bold;
 }
 
 #skills .skills-container .skill:hover {
   transform: scale(1.3);
   color: var(--hover);
 }
+
+/* Contact me */
 
 /* Animations */
 
