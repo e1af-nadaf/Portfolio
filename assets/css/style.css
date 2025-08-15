@@ -125,6 +125,17 @@ body {
   transform: scale(1.2);
 }
 
+/* Projects Section */
+
+#projects {
+  background-color: var(--soft-accent);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6rem 3rem 4rem;
+  text-align: center;
+}
+
 /* Animations */
 
 @keyframes fadeIn {
