@@ -286,7 +286,7 @@ body {
   background-color: var(--soft-accent);
   padding: 6rem 3rem 4rem;
   text-align: center;
-  min-height: 70vh;
+  min-height: 60vh;
   animation: fadeIn 1.2s ease-in-out;
 }
 
