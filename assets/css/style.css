@@ -256,6 +256,30 @@ body {
   color: var(--hover);
 }
 
+#skills .skills-container .skill::after {
+  content: attr(data-title);
+  position: absolute;
+  bottom: -40px; /* Position below the icon */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--hover);
+  color: var(--text-color);
+  padding: 4px 4px;
+  border-radius: 5px;
+  font-size: 0.5rem;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  z-index: 10;
+}
+
+/* Show tooltip on hover */
+#skills .skills-container .skill:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-5px);
+}
+
 /* Contact me */
 
 #contact {
