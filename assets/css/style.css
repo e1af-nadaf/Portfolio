@@ -27,46 +27,6 @@ body {
   scroll-padding-top: 20rem;
 }
 
-/* Navbar */
-
-/* .navbar {
-  background-color: var(--accent-color);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0rem 3rem;
-  position: fixed;
-  height: 5rem;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
-}
-
-.navbar .logo {
-  font-size: 1.8rem;
-  font-weight: bold;
-}
-
-.navbar .nav-links {
-  list-style: none;
-  display: flex;
-  gap: 2rem;
-  margin: 0;
-}
-
-.navbar .nav-links li a {
-  text-decoration: none;
-  color: var(--text-color);
-  font-family: var(--secondary-font);
-  font-weight: 600;
-  transition: color 0.3s ease;
-}
-
-.navbar .nav-links li a:hover {
-  color: var(--bg-color);
-} */
-
 .navbar {
   background-color: var(--accent-color);
   display: flex;
@@ -109,28 +69,6 @@ body {
   display: none;
   font-size: 2rem;
   cursor: pointer;
-}
-
-@media (max-width: 768px) {
-  .nav-links {
-    position: absolute;
-    top: 60px;
-    right: 0;
-    background: #444;
-    flex-direction: column;
-    width: 200px;
-    text-align: right;
-    display: none; /* hidden by default */
-    padding: 1rem;
-  }
-
-  .nav-links.active {
-    display: flex; /* show when active */
-  }
-
-  .hamburger {
-    display: block; /* show hamburger */
-  }
 }
 
 /* Hero section */
@@ -418,16 +356,64 @@ body {
     flex-direction: column;
     width: 200px;
     text-align: right;
-    display: none; /* hidden by default */
+    display: none;
     padding: 1rem;
   }
 
   .navbar .nav-links.active {
-    display: flex; /* show when active */
+    display: flex;
   }
 
   .navbar .hamburger {
-    display: block; /* show hamburger */
+    display: block;
+  }
+}
+
+/* About section */
+
+@media (max-width: 992px) {
+  #hero {
+    max-width: 85%;
+    padding: 4rem 2rem 1rem;
+  }
+
+  #hero h1 {
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+
+  #hero .mid-quote {
+    font-size: 1.1rem;
+  }
+
+  #hero .portrait {
+    width: 16rem;
+    height: 16rem;
+    margin-top: 2rem;
+  }
+}
+
+/* For small screens (mobile) */
+@media (max-width: 576px) {
+  #hero {
+    max-width: 95%;
+    padding: 3rem 1rem 1rem;
+  }
+
+  #hero h1 {
+    font-size: 1.6rem;
+    margin-top: 1.5rem;
+  }
+
+  #hero .mid-quote {
+    font-size: 1rem;
+    padding: 0 0.5rem;
+  }
+
+  #hero .portrait {
+    width: 12rem;
+    height: 12rem;
+    margin-top: 1.5rem;
   }
 }
 
