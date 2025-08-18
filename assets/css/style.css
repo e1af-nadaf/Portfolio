@@ -416,6 +416,7 @@ body {
 /* For small screens (mobile) */
 @media (max-width: 576px) {
   #hero {
+    padding-top: 80px;
     max-width: 95%;
     padding: 3rem 1rem 1rem;
   }
